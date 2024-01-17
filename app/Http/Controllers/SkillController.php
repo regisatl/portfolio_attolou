@@ -41,4 +41,9 @@ class SkillController extends Controller
         return redirect()->back();
     }
 
+    public function edit(Skill $skill)
+    {
+        return Inertia::render('Skills/Edit', compact('skill'));
+    }
+
 }

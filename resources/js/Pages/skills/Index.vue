@@ -56,10 +56,11 @@ defineProps({
                                 </td>
                                 <td class="px-6 py-4">
                                     <Link :href="route('skills.edit', skill.id)" method="put"
-                                        class="font-medium text-emerald-500 hover:text-emerald-700 hover:underline mr-2">Edit
+                                        class="font-medium text-emerald-500 hover:underline mr-2">
+                                        Edit
                                     </Link>
                                     <Link :href="route('skills.destroy', skill.id)" method="delete" as="button" type="button"
-                                        class="font-medium text-red-500 hover:text-red-700 hover:underline mr-2">Delete
+                                        class="font-medium text-red-500 hover:underline mr-2">Delete
                                     </Link>
                                 </td>
                             </tr>
