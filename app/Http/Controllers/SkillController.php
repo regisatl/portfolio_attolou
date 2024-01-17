@@ -46,4 +46,22 @@ class SkillController extends Controller
         return Inertia::render('Skills/Edit', compact('skill'));
     }
 
+    public function update(Request $request, Skill $skill)
+    {
+        $request->validate([
+            'name' => ['required', 'string', 'min:3'],
+            'image' => ['required', 'image']
+        ]);
+
+        if ($request->hasFile('image')) {
+            $image = $request->file('image')->store('skills');
+            $skill->update([
+                'name' => $request->name,
+                'image' => $image
+            ]);
+            return redirect()->route('skills.index');
+        }
+        return redirect()->back();
+    }
+
 }
