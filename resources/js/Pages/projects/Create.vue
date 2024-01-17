@@ -13,7 +13,7 @@ const props = defineProps({
 const form = useForm({
     name: "",
     image: null,
-    skills_id: "",
+    skill_id: "",
     project_url: "",
 });
 
@@ -35,7 +35,7 @@ const submit = () => {
             <div class="max-w-md mx-auto sm:px-6 lg:px-8">
                 <form @submit.prevent="submit">
                     <div class="mb-3">
-                        <select v-model="form.skill_id" id="skill_id" name="skilly_id"
+                        <select v-model="form.skill_id" id="skill_id" name="skill_id"
                             class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:ring-border-indigo-500 sm:text-sm rounded-md">
                             <option value="" selected disabled>Select one category skill</option>
                             <option v-for="skill in skills" :key="skill.id" :value="skill.id">{{ skill.name }}</option>
