@@ -14,7 +14,7 @@ import { Head, Link } from '@inertiajs/vue3';
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="flex justify-end m-2 p-2">
-                    <Link :href="route('projects.create')" class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">New Project</Link>
+                    <Link :href="route('projects.create')" class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-md shadow-lg">New Project</Link>
                 </div>
             </div>
         </div>
