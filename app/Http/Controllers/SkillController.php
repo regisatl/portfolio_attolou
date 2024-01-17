@@ -7,4 +7,10 @@ use Illuminate\Http\Request;
 class SkillController extends Controller
 {
     //
+
+    public function index()
+    {
+        return 'Skills';
+    }
+
 }
