@@ -4,7 +4,7 @@ import { Head, Link } from '@inertiajs/vue3';
 </script>
 
 <template>
-    <Head title="Skills" />
+    <Head title="Skills Create" />
 
     <AuthenticatedLayout>
         <template #header>
@@ -13,9 +13,7 @@ import { Head, Link } from '@inertiajs/vue3';
 
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                <div class="flex justify-end m-2 p-2">
-                    <Link :href="route('skills.create')" class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-md">Add Skill</Link>
-                </div>
+               Create
             </div>
         </div>
     </AuthenticatedLayout>

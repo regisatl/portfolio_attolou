@@ -14,4 +14,9 @@ class SkillController extends Controller
         return Inertia::render('Skills/Index');
     }
 
+    public function create()
+    {
+        return Inertia::render('Skills/Create');
+    }
+
 }
