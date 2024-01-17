@@ -6,11 +6,16 @@ import InputLabel from '@/Components/InputLabel.vue';
 import PrimaryButton from '@/Components/PrimaryButton.vue';
 import TextInput from '@/Components/TextInput.vue';
 
-const form = useForm({
-    name: '',
-    image: null,
+const props = defineProps({
+    skills: Array,
 });
 
+const form = useForm({
+    name: "",
+    image: null,
+    skills_id: "",
+    project_url: "",
+});
 
 const submit = () => {
     form.post(route('projects.store'));
@@ -27,13 +32,26 @@ const submit = () => {
         </template>
 
         <div class="py-12">
-            <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="max-w-md mx-auto sm:px-6 lg:px-8">
                 <form @submit.prevent="submit">
+                    <div class="mb-3">
+                        <select v-model="form.skill_id" id="skill_id" name="skilly_id"
+                            class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:ring-border-indigo-500 sm:text-sm rounded-md">
+                            <option value="" selected disabled>Select one category skill</option>
+                            <option v-for="skill in skills" :key="skill.id" :value="skill.id">{{ skill.name }}</option>
+                        </select>
+                    </div>
                     <div class="mb-3">
                         <InputLabel for="name" value="Name" />
                         <TextInput id="name" type="text" class="mt-1 block w-full" v-model="form.name" autofocus
-                            aria-autocomplete="username" />
+                            aria-autocomplete="name" />
                         <InputError class="mt-2" :message="form.errors.name" />
+                    </div>
+                    <div class="mb-3">
+                        <InputLabel for="project_url" value="Project_Url" />
+                        <TextInput id="project_url" type="text" class="mt-1 block w-full" v-model="form.project_url"
+                            autofocus aria-autocomplete="projecturl" />
+                        <InputError class="mt-2" :message="form.errors.project_" />
                     </div>
                     <div>
                         <InputLabel for="image" value="Image" />
@@ -43,7 +61,7 @@ const submit = () => {
                     </div>
 
                     <div class="flex items-center justify-end mt-4">
-                        <PrimaryButton class="ms-4" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
+                        <PrimaryButton class="w-full flex justify-center" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
                             Create
                         </PrimaryButton>
                     </div>
