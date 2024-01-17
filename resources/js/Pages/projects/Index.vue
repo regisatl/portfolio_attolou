@@ -51,7 +51,7 @@ defineProps({
                 <div class="relative overflow-x-auto">
                     <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 rounded-md">
                         <thead class="text-xs text-gray-700 uppercase bg-gray-200 dark:bg-gray-700 dark:text-gray-400">
-                            <tr>
+                            <tr class="text-center">
                                 <th scope="col" class="px-6 py-3">
                                     ID
                                 </th>
@@ -71,7 +71,7 @@ defineProps({
                         </thead>
                         <tbody>
                             <tr v-for="project in projects.data" :key="project.id"
-                                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-100">
+                                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-100 text-center">
                                 <th scope="row"
                                     class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                     {{project.id}}
@@ -82,7 +82,7 @@ defineProps({
                                 <td class="px-6 py-4">
                                     {{project.skill.name}}
                                 </td>
-                                <td class="px-6 py-4">
+                                <td class="px-6 py-4 flex justify-center">
                                     <img :src="project.image" alt="" class="w-12 h-12 rounded-full">
                                 </td>
                                 <td class="px-6 py-4">

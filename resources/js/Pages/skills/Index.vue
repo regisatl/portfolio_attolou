@@ -27,7 +27,7 @@ defineProps({
                     <div class="flex">
                         <button id="dropdown-button" data-dropdown-toggle="dropdown"
                             class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-gray-300 rounded-s-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:text-white dark:border-gray-600"
-                            type="button">All skill <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
+                            type="button">All skills <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="m1 1 4 4 4-4" />
@@ -55,7 +55,7 @@ defineProps({
                         class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 rounded-t-lg shadow-lg">
                         <thead
                             class="text-xs text-gray-700 uppercase bg-gray-200 dark:bg-gray-700 dark:text-gray-400 rounded-t-lg">
-                            <tr>
+                            <tr class="text-center">
                                 <th scope="col" class="px-6 py-3">
                                     ID
                                 </th>
@@ -72,7 +72,7 @@ defineProps({
                         </thead>
                         <tbody>
                             <tr v-for="skill in skills.data" :key="skill.id"
-                                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-100">
+                                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-100 text-center">
                                 <th scope="row"
                                     class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                     {{ skill.id }}
@@ -80,11 +80,11 @@ defineProps({
                                 <td class="px-6 py-4">
                                     {{ skill.name }}
                                 </td>
-                                <td class="px-6 py-4">
+                                <td class="px-6 py-4 flex justify-center">
                                     <img :src="skill.image" alt="" class="w-12 h-12 rounded-full">
                                 </td>
                                 <td class="px-6 py-4">
-                                    <Link :href="route('skills.edit', skill.id)" method="put"
+                                    <Link :href="route('skills.edit', skill.id)"
                                         class="font-medium text-emerald-500 hover:underline mr-2">
                                     Edit
                                     </Link>

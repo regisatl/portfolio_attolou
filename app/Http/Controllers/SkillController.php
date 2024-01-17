@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Resources\SkillResource;
 use App\Models\Skill;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use Inertia\Inertia;
 
 class SkillController extends Controller
@@ -48,20 +49,26 @@ class SkillController extends Controller
 
     public function update(Request $request, Skill $skill)
     {
+        $image = $skill->image;
         $request->validate([
-            'name' => ['required', 'string', 'min:3'],
-            'image' => ['required', 'image']
+            'name' => ['required', 'string', 'min:3']
         ]);
 
         if ($request->hasFile('image')) {
-            $image = $request->file('image')->store('skills');
-            $skill->update([
-                'name' => $request->name,
-                'image' => $image
-            ]);
-            return redirect()->route('skills.index');
+           Storage::delete($skill->image);
+           $image = $request->file('image')->store('skills');
         }
-        return redirect()->back();
+        $skill->update([
+            'name' => $request->name,
+            'image' => $image
+        ]);
+        return redirect()->route('skills.index');
+    }
+
+    public function destroy(Skill $skill){
+        Storage::delete($skill->image);
+        $skill->delete();
+        return redirect()->route('skills.index');
     }
 
 }

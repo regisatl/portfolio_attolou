@@ -1,25 +1,23 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
-import { Head, useForm } from '@inertiajs/vue3';
+import { Head, useForm, router } from '@inertiajs/vue3';
 import InputError from '@/Components/InputError.vue';
 import InputLabel from '@/Components/InputLabel.vue';
 import PrimaryButton from '@/Components/PrimaryButton.vue';
 import TextInput from '@/Components/TextInput.vue';
-import {Inertia} from "@inertiajs/inertia";
-
 
 const props = defineProps({
     skill: Object,
 });
 
 const form = useForm({
-    name: props?.name,
+    name: props.skill?.name,
     image: null,
 });
 
 
 const submit = () => {
-    Inertia.post(`/skills/${props.skill.id}`, {
+    router.post(`/skills/${props.skill.id}`, {
         _method: "put",
         name: form.name,
         image: form.image,
@@ -37,8 +35,8 @@ const submit = () => {
         </template>
 
         <div class="py-12">
-            <div class="max-w-md mx-auto sm:px-6 lg:px- bg-white">
-                <form class="p-4" @submit.prevent="submit">
+            <div class="max-w-md mx-auto sm:px-6 lg:px-8 bg-white rounded-lg shadow-lg">
+                <form class="p-8" @submit.prevent="submit">
                     <div class="mb-3">
                         <InputLabel for="name" value="Name" />
                         <TextInput id="name" type="text" class="mt-1 block w-full" v-model="form.name" autofocus
@@ -53,8 +51,8 @@ const submit = () => {
                     </div>
 
                     <div class="flex items-center justify-end mt-4">
-                        <PrimaryButton class="w-full flex justify-center" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
-                            Save
+                        <PrimaryButton class="w-full flex justify-center py-3" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
+                            Update
                         </PrimaryButton>
                     </div>
                 </form>
