@@ -114,4 +114,8 @@ defineProps({
 </AuthenticatedLayout></template>
 
 
-<style></style>
+<style>
+body {
+    font-family: 'Poppins', sans-serif;
+}
+</style>

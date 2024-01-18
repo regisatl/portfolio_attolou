@@ -56,13 +56,15 @@ const submit = () => {
                     </div>
                     <div>
                         <InputLabel for="image" value="Image" />
-                        <TextInput id="image" type="file" class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 py-3 px-2"
+                        <TextInput id="image" type="file"
+                            class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 py-3 px-2"
                             @input="form.image = $event.target.files[0]" />
                         <InputError class="mt-2" :message="$page.props.errors.image" />
                     </div>
 
                     <div class="flex items-center justify-end mt-4">
-                        <PrimaryButton class="w-full flex justify-center py-3" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
+                        <PrimaryButton class="w-full flex justify-center py-3" :class="{ 'opacity-25': form.processing }"
+                            :disabled="form.processing">
                             Create
                         </PrimaryButton>
                     </div>
@@ -73,4 +75,8 @@ const submit = () => {
 </template>
 
 
-<style></style>
+<style>
+body {
+    font-family: 'Poppins', sans-serif;
+}
+</style>

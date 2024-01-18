@@ -80,7 +80,7 @@ class ProjectController extends Controller
         // Stocke l'image actuelle du projet.
         $request->validate([
             'name' => ['required', 'string', 'min:3'],
-            'skill_id' => ['required', 'skill_id']
+            'skill_id' => ['required']
         ]);
         // Valide les données de la requête.
 

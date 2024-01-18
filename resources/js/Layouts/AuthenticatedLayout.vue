@@ -105,7 +105,7 @@ const showingNavigationDropdown = ref(false);
                                             'inline-flex': showingNavigationDropdown,
                                         }"
                                         stroke-linecap="round"
-                                        stroke-linejoin="round"
+                                            stroke-linejoin="round"
                                         stroke-width="2"
                                         d="M6 18L18 6M6 6l12 12"
                                     />
@@ -123,6 +123,12 @@ const showingNavigationDropdown = ref(false);
                     <div class="pt-2 pb-3 space-y-1">
                         <ResponsiveNavLink :href="route('dashboard')" :active="route().current('dashboard')">
                             Dashboard
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink :href="route('skills.index')" :active="route().current('skills.index')">
+                            Skills
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink :href="route('projects.index')" :active="route().current('projects.index')">
+                            Projects
                         </ResponsiveNavLink>
                     </div>
 

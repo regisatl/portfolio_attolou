@@ -5,7 +5,7 @@
 
 /* @layer base {
     body {
-        @apply font-body text-paragraph leading-6 bg-gray-200;
+        @apply font-sans text-paragraph leading-6 bg-gray-200;
     }
     h1,
     h2,
@@ -43,3 +43,4 @@
         @apply text-accent;
     }
 } */
+
