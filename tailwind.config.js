@@ -14,7 +14,7 @@ export default {
     theme: {
         fontFamily: {
             primary: "Poppins",
-            boby: "work sans",
+            boby: "Playfair Display",
         },
         container: {
             padding: {
