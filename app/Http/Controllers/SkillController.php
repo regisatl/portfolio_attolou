@@ -51,7 +51,7 @@ class SkillController extends Controller
                 'image' => $image
             ]);
             // Crée une nouvelle compétence avec le nom et l'image.
-            return redirect()->route('skills.index');
+            return redirect()->route('skills.index')->with('message', 'Skill created successfully');
             // Redirige l'utilisateur vers la liste des compétences.
         }
         return redirect()->back();
@@ -87,7 +87,7 @@ class SkillController extends Controller
             'image' => $image
         ]);
         // Met à jour la compétence avec le nouveau nom et la nouvelle image.
-        return redirect()->route('skills.index');
+        return redirect()->route('skills.index')->with('message', 'Skill updated successfully');
         // Redirige l'utilisateur vers la liste des compétences.
     }
 
@@ -98,7 +98,7 @@ class SkillController extends Controller
         // Supprime l'image de la compétence.
         $skill->delete();
         // Supprime la compétence de la base de données.
-        return redirect()->route('skills.index');
+        return redirect()->route('skills.index')->with('message', 'Skill deleted successfully');
         // Redirige l'utilisateur vers la liste des compétences.
     }
 }

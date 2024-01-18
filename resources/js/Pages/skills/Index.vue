@@ -80,11 +80,11 @@ defineProps({
                             </tr>
                         </thead>
                         <tbody>
-                            <tr v-for="skill in skills.data" :key="skill.id"
+                            <tr v-for="(skill, i) in skills.data" :key="skill.id"
                                 class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-100 text-center">
                                 <th scope="row"
                                     class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    {{ skill.id }}
+                                    {{ i+1 }}
                                 </th>
                                 <td class="px-6 py-4">
                                     {{ skill.name }}
