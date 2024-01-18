@@ -33,6 +33,15 @@ defineProps({
                                     d="m1 1 4 4 4-4" />
                             </svg>
                         </button>
+                        <div id="dropdown"
+                            class="z-20 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdown-button">
+                                <li v-for="skill in skills.data" :key="skill.id">
+                                    <button type="button"
+                                        class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">{{ skill.name }}</button>
+                                </li>
+                            </ul>
+                        </div>
                         <div class="relative w-full">
                             <input type="search" id="search-dropdown"
                                 class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-e-lg border-s-gray-50 border-s-2 border border-gray-300 focus:ring-indigo-500 focus:border-indigo-500 dark:bg-gray-700 dark:border-s-gray-700  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-indigo-500"
