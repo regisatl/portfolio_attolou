@@ -1,6 +1,7 @@
 <script setup>
 import { Head } from '@inertiajs/vue3';
 import FrontendLayout from "@/Layouts/Frontend.vue";
+import Hero from "@/Components/Frontend/Hero.vue";
 
 </script>
 
@@ -8,6 +9,7 @@ import FrontendLayout from "@/Layouts/Frontend.vue";
     <Head title="Welcome to portfolio Attolou" />
     <FrontendLayout>
         <!---Hero primary-->
+        <Hero />
         <!---Promot tail-100-->
         <!---About secondary-->
         <!---Skills  tail-100-->
@@ -17,4 +19,9 @@ import FrontendLayout from "@/Layouts/Frontend.vue";
     </FrontendLayout>
 </template>
 
-<style></style>
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+</style>
+
