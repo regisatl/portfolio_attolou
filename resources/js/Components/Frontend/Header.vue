@@ -4,11 +4,11 @@ const showMobileMenuNavbar = ref("false");
 const showMobileMenuLogo = ref("false");
 
 const showMenuNavbar = () => {
-    showMobileMenuNavbar.value =!showMobileMenuNavbar.value;
+    showMobileMenuNavbar.value = !showMobileMenuNavbar.value;
 }
 
 const showMenuLogo = () => {
-    showMobileMenuLogo.value =!showMobileMenuLogo.value;
+    showMobileMenuLogo.value = !showMobileMenuLogo.value;
 }
 
 const clickBody = () => {
@@ -38,8 +38,7 @@ const clickBody = () => {
                 </button>
                 <!-- Dropdown menu -->
                 <div class="z-50 my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-b-lg dark:rounded-lg shadow dark:bg-gray-800 dark:divide-gray-600 transition duration-300 absolute top-8 right-12 lg:top-5 lg:right-0"
-                :class="{hidden : showMobileMenuLogo}"
-                    id="user-dropdown">
+                    :class="{ hidden: showMobileMenuLogo }" id="user-dropdown">
                     <div class="px-4 py-3">
                         <span class="block text-sm text-gray-900 dark:text-white">Admin ATTOLOU</span>
                         <span class="block text-sm  text-gray-500 truncate dark:text-gray-400">adminattolou@gmail.com</span>
@@ -71,28 +70,29 @@ const clickBody = () => {
                     </svg>
                 </button>
             </div>
-            <div class="items-center justify-between w-full md:flex md:w-auto md:order-1 transition duration-300" :class="{hidden : showMobileMenuNavbar}" id="navbar-user">
+            <div class="items-center justify-between w-full md:flex md:w-auto md:order-1 transition duration-300"
+                :class="{ hidden: showMobileMenuNavbar }" id="navbar-user">
                 <ul
                     class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                     <li>
                         <a href="#"
-                            class="block py-2 px-3 text-gray-900 rounded hover:bg-emerald-500 md:hover:bg-transparent md:hover:text-emerald-700 md:p-0 dark:text-white md:dark:hover:text-emerald-500 dark:hover:bg-emerald-500 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition duration-500 transform hover:scale-110">Home</a>
+                            class="block py-3 px-4 text-gray-900 rounded hover:bg-blue-500 md:hover:bg-transparent md:hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-blue-500 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition duration-500">Home</a>
                     </li>
                     <li>
                         <a href="#"
-                            class="block py-2 px-3 text-gray-900 rounded hover:bg-emerald-500 md:hover:bg-transparent md:hover:text-emerald-700 md:p-0 dark:text-white md:dark:hover:text-emerald-500 dark:hover:bg-emerald-500 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition duration-500 transform hover:scale-110">About</a>
+                            class="block py-3 px-4 text-gray-900 rounded hover:bg-blue-500 md:hover:bg-transparent md:hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-blue-500 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition duration-500">About</a>
                     </li>
                     <li>
                         <a href="#"
-                            class="block py-2 px-3 text-gray-900 rounded hover:bg-emerald-500 md:hover:bg-transparent md:hover:text-emerald-700 md:p-0 dark:text-white md:dark:hover:text-emerald-500 dark:hover:bg-emerald-500 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition duration-500 transform hover:scale-110">Skills</a>
+                            class="block py-3 px-4 text-gray-900 rounded hover:bg-blue-500 md:hover:bg-transparent md:hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-blue-500 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition duration-500">Skills</a>
                     </li>
                     <li>
                         <a href="#"
-                            class="block py-2 px-3 text-gray-900 rounded hover:bg-emerald-500 md:hover:bg-transparent md:hover:text-emerald-700 md:p-0 dark:text-white md:dark:hover:text-emerald-500 dark:hover:bg-emerald-500 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition duration-500 transform hover:scale-110">Projects</a>
+                            class="block py-3 px-4 text-gray-900 rounded hover:bg-blue-500 md:hover:bg-transparent md:hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-blue-500 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition duration-500">Projects</a>
                     </li>
                     <li>
                         <a href="#"
-                            class="block py-2 px-3 text-gray-900 rounded hover:bg-emerald-500 md:hover:bg-transparent md:hover:text-emerald-700 md:p-0 dark:text-white md:dark:hover:text-emerald-500 dark:hover:bg-emerald-500 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition duration-500 transform hover:scale-110">Contact</a>
+                            class="block py-3 px-4 text-gray-900 rounded hover:bg-blue-500 md:hover:bg-transparent md:hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-blue-500 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition duration-500">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -103,4 +103,5 @@ const clickBody = () => {
 <style>
 body {
     font-family: 'Poppins', sans-serif;
-}</style>
+}
+</style>
