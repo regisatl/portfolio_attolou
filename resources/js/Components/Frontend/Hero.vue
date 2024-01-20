@@ -19,7 +19,8 @@
                         me</button>
                 </div>
                 <div class="hidden lg:flex flex-1 justify-end items-end h-full">
-                    <img class="w-full h-full object-cover rounded-lg" src="" alt="">
+                    <img class="w-full h-full object-cover" src="/images/img/fotis.jpg"
+                        alt="">
                 </div>
             </div>
         </div>
