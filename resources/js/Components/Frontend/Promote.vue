@@ -31,7 +31,7 @@
                                 aria-hidden="true">→</span></a>
                     </div>
                 </div>
-                <div class="relative mt-16 h-80 lg:mt-8">
+                <div class="relative mt-16 h-80 lg:mt-8 transform hover:scale-110 transition duration-700">
                     <img class="absolute lg:left-0 md:left-10 md:top-0 lg:top-12 right-0 w-[43rem] max-w-none bg-white/5 ring-1 ring-white/1 rounded-lg" src="/images/img/hero9.jpg"
                         alt="App screenshot" />
                 </div>

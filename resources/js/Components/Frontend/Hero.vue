@@ -22,7 +22,7 @@
                         with
                         me</button>
                 </div>
-                <div class="flex flex-1 justify-end items-center h-full mt-8 md:mt-0 md:ms-2">
+                <div class="flex flex-1 justify-end items-center h-full mt-8 md:mt-0 md:ms-2 transform hover:scale-110 transition duration-700">
                     <img class="object-cover rounded-lg bg-white/5 ring-1 ring-white/1" src="/images/img/hero8.jpg" alt="Hero image">
                 </div>
             </div>

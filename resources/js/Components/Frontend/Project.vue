@@ -6,14 +6,21 @@ defineProps({
 </script>
 
 <template>
-    <Link href="project.project_url" class="group flex flex-col items-center text-center cursor-pointer">
+    <Link href="project.project_url"
+        class="group flex flex-col items-center text-center cursor-pointer">
+    <div class="card bg-white  transform hover:scale-105 transition duration-700 shadow-lg rounded-lg py-5 px-20">
         <div class="mb-6">
             <img :src="project.image" :alt="project.name" class="rounded-2xl h-56">
         </div>
-        <div class="flex gap-5">
-            <span class="group-hover:text-emerald-600 capitalize text-slate-800 font-medium text-sm mb-3">{{ project.skill.name }}</span>
-            <h3 class="group-hover:text-emerald-600 capitalize text-slate-800 font-medium text-sm mb-3">{{ project.name }}</h3>
+        <div class="flex justify-center items-center gap-5">
+            <span
+                class="group-hover:text-emerald-600 dark:text-gray-400 dark:group-hover:text-gray-100 capitalize text-slate-800 font-medium text-sm mb-3">{{
+                    project.skill.name }}</span>
+            <h3
+                class="group-hover:text-emerald-600 dark:text-gray-400 dark:group-hover:text-gray-100 capitalize text-slate-800 font-medium text-sm mb-3">
+                {{ project.name }}</h3>
         </div>
+    </div>
     </Link>
 </template>
 

@@ -29,12 +29,12 @@ const filterProjects = (id) => {
             <ul class="flex flex-col lg:flex-row justify-evenly items-center">
                 <li class="cursor-pointer capitalize m-4">
                     <button @click="filterProjects('all')"
-                        class="flex text-center px-4 py-2 hover:text-[#40a4fb] font-semibold dark:text-dark-navy-100"
-                        :class="[selectedSkill === 'all' ? 'text-[#40a4fb] dark:text-gray-200 active' : '']">All</button>
+                        class="flex text-center px-4 py-2 text-slate-800 hover:text-[#40a4fb] font-semibold dark:text-gray-100 active:text-emerald-500"
+                        :class="[selectedSkill === 'all' ? 'text-[#40a4fb] dark:text-[#40a4fb]' : '']">All</button>
                 </li>
                 <li class="cursor-pointer capitalize m-4" v-for="projectSkill in skills.data" :key="projectSkill.id">
                     <button @click="filterProjects(projectSkill.id)"
-                        class="flex text-center px-4 py-2 hover:text-[#40a4fb] font-semibold dark:text-gray-200" :class="[selectedSkill === projectSkill.id ? 'text-[#40a4fb]dark:text-gray-200 active' : '']">{{
+                        class="flex text-center text-slate-800 px-4 py-2 hover:text-[#40a4fb] font-semibold dark:text-gray-100 active:text-emerald-500" :class="[selectedSkill === projectSkill.id ? 'text-[#40a4fb]dark:text-gray-100' : '']">{{
                             projectSkill.name }}</button>
                 </li>
             </ul>

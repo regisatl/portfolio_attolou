@@ -20,7 +20,7 @@ const showMenuLogo = () => {
                 class="flex items-center rtl:space-x-reverse hover:animate-bounce transition duration- delay-150 ease-in-out relative">
                 <img src="/images/cv.png" class="h-10" alt="CV Logo" />
                 <span
-                    class="self-center text-2xl font-bold whitespace-nowrap dark:text-white uppercase text-[#40a4fb] absolute left-8 top-1">urriculum
+                    class="self-center text-2xl font-bold whitespace-nowrap dark:text-white uppercase text-[#40a4fb] dark:hover:text-[#40a4fb] absolute left-8 top-1">urriculum
                     Vitae</span>
             </a>
             <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse relative">
@@ -71,23 +71,23 @@ const showMenuLogo = () => {
                     class="flex flex-col font-medium p-4 md:p-0 mt-4 border rounded-lg bg-amber-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-amber-50 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                     <li>
                         <a href="#"
-                            class="block py-3 px-4 text-gray-900 rounded hover:bg-blue-500 md:hover:bg-transparent md:hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-blue-500 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition duration-500 transform hover:scale-110">Home</a>
+                            class="block py-3 px-4 text-gray-900 rounded hover:bg-[#40a4fb] md:hover:bg-transparent md:hover:text-[#40a4fb] md:p-0 dark:text-white md:dark:hover:text-[#40a4fb] dark:hover:bg-blue-500 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition duration-500 transform hover:scale-110 active:text-emerald-500">Home</a>
                     </li>
                     <li>
                         <a href="#"
-                            class="block py-3 px-4 text-gray-900 rounded hover:bg-blue-500 md:hover:bg-transparent md:hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-blue-500 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition duration-500 transform hover:scale-110">About</a>
+                            class="block py-3 px-4 text-gray-900 rounded hover:bg-[#40a4fb] md:hover:bg-transparent md:hover:text-[#40a4fb] md:p-0 dark:text-white md:dark:hover:text-[#40a4fb] dark:hover:bg-[#40a4fb] dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition duration-500 transform hover:scale-110 active:text-emerald-500">About</a>
                     </li>
                     <li>
                         <a href="#"
-                            class="block py-3 px-4 text-gray-900 rounded hover:bg-blue-500 md:hover:bg-transparent md:hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-blue-500 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition duration-500 transform hover:scale-110">Skills</a>
+                            class="block py-3 px-4 text-gray-900 rounded hover:bg-[#40a4fb] md:hover:bg-transparent md:hover:text-[#40a4fb] md:p-0 dark:text-white md:dark:hover:text-[#40a4fb] dark:hover:bg-[#40a4fb] dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition duration-500 transform hover:scale-110 active:text-emerald-500">Skills</a>
                     </li>
                     <li>
                         <a href="#"
-                            class="block py-3 px-4 text-gray-900 rounded hover:bg-blue-500 md:hover:bg-transparent md:hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-blue-500 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition duration-500 transform hover:scale-110">Projects</a>
+                            class="block py-3 px-4 text-gray-900 rounded hover:bg-[#40a4fb] md:hover:bg-transparent md:hover:text-[#40a4fb] md:p-0 dark:text-white md:dark:hover:text-[#40a4fb] dark:hover:bg-[#40a4fb] dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition duration-500 transform hover:scale-110 active:text-emerald-500">Projects</a>
                     </li>
                     <li>
                         <a href="#"
-                            class="block py-3 px-4 text-gray-900 rounded hover:bg-blue-500 md:hover:bg-transparent md:hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-blue-500 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition duration-500 transform hover:scale-110">Contact</a>
+                            class="block py-3 px-4 text-gray-900 rounded hover:bg-[#40a4fb] md:hover:bg-transparent md:hover:text-[#40a4fb] md:p-0 dark:text-white md:dark:hover:text-[#40a4fb] dark:hover:bg-[#40a4fb] dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition duration-500 transform hover:scale-110 active:text-emerald-500">Contact</a>
                     </li>
                 </ul>
             </div>

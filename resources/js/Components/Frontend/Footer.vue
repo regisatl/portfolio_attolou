@@ -9,7 +9,7 @@
                 <div class="flex space-x-6 items-center justify-center">
                     <img src="/images/cv.png" alt="cv attolou" class="w-24">
                 </div>
-                <p class="dark:text-gray-100 text-[15px]">
+                <p class="dark:text-gray-100 text-[15px] font-medium">
                     &copy; ATL Technologie {{ (new Date()).getFullYear() }}.  All right reserved.
                 </p>
             </div>
