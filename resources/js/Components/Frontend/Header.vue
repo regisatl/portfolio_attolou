@@ -11,15 +11,10 @@ const showMenuLogo = () => {
     showMobileMenuLogo.value = !showMobileMenuLogo.value;
 }
 
-const clickBody = () => {
-    showMobileMenuNavbar.value = false;
-    showMobileMenuLogo.value = false;
-}
-
 </script>
 
 <template>
-    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+    <nav class="bg-light-secondary border-gray-200 dark:bg-gray-900">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-5">
             <a href="#"
                 class="flex items-center rtl:space-x-reverse hover:animate-bounce transition duration- delay-150 ease-in-out relative">
@@ -34,7 +29,7 @@ const clickBody = () => {
                     id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown"
                     data-dropdown-placement="bottom">
                     <span class="sr-only">Open user menu</span>
-                    <img class="w-8 h-8 rounded-full" src="/images/photo.jpg" alt="user photo">
+                    <img class="w-8 h-8 rounded-full border-2 border-slate-500" src="/images/photo.jpg" alt="user photo">
                 </button>
                 <!-- Dropdown menu -->
                 <div class="z-50 my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-b-lg dark:rounded-lg shadow dark:bg-gray-800 dark:divide-gray-600 transition duration-300 absolute top-8 right-12 lg:top-5 lg:right-0"
