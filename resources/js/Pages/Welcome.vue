@@ -7,6 +7,7 @@ import About from "@/Components/Frontend/About.vue";
 import Skills from "@/Components/Frontend/Skills.vue";
 import Portfolio from "@/Components/Frontend/Portfolio.vue";
 import Services from "@/Components/Frontend/Services.vue";
+import Contact from "@/Components/Frontend/Contact.vue";
 
 defineProps({
     skills: Object,
@@ -31,6 +32,7 @@ defineProps({
         <!---Services secondary-->
         <Services />
         <!---Contact primary-->
+        <Contact />
     </FrontendLayout>
 </template>
 
