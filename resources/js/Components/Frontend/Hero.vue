@@ -18,7 +18,7 @@
                         sequi voluptate commodi magni suscipit excepturi.
                     </p>
                     <button
-                        class="btn btn-md dark:bg-blue-500 hover:bg-slate-800 text-gray-100 bg-slate-900 md:btn-lg transition-all px-4 py-3 dark:text-gray-50 font-semibold dark:hover:bg-blue-600 rounded-lg shadow-lg">Work
+                        class="btn btn-md dark:bg-blue-500 hover:bg-slate-700 text-gray-100 bg-slate-800 md:btn-lg transition-all px-4 py-3 dark:text-gray-50 font-semibold dark:hover:bg-blue-600 rounded-lg shadow-lg">Work
                         with
                         me</button>
                 </div>

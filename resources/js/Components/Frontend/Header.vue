@@ -14,7 +14,7 @@ const showMenuLogo = () => {
 </script>
 
 <template>
-    <nav class="bg-amber-50 border-gray-200 dark:bg-gray-900">
+    <nav class="bg-amber-50 border-b-2 border-gray-200 dark:bg-gray-900">
         <div class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-5">
             <a href="#"
                 class="flex items-center rtl:space-x-reverse hover:animate-bounce transition duration- delay-150 ease-in-out relative">
