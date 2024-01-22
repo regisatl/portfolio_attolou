@@ -7,7 +7,7 @@
         <div class="container mx-auto h-full">
             <div class="flex flex-col md:flex-row items-center h-full">
                 <div class="flex-1 flex-col items-center lg:items-start">
-                    <p class="text-lg text-slate-900 dark:text-amber-100 text-md mb-[22px] font-semibold">Hey, I'm Régis ATTOLOU </p>
+                    <p class="text-lg text-[#40a4fb] dark:text-amber-100 text-md mb-[22px] font-semibold">Hey, I'm Régis ATTOLOU </p>
                     <h1
                         class="text-4xl leading-[44px] md:text-5xl md:leading-light lg:text-7xl lg:leading-[1 ] font-bold md:tracking-[-2px] dark:text-gray-100 text-slate-800">
                         I Build & Design <br /> Web Interfaces.

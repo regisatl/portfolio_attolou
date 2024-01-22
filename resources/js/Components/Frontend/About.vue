@@ -12,7 +12,7 @@
                             class="text-3xl lg:text-4xl md:text-xl sm:text-xl font-medium lg:font-extrabold md:font-bold mb-3 text-slate-800 dark:text-amber-100">
                             About Me
                         </h2>
-                        <p class="mb-4 text-blue-500 dark:text-gray-300 font-semibold">Freelance frontend and backend web
+                        <p class="mb-4 text-[#40a4fb] dark:text-gray-300 font-semibold">Freelance frontend and backend web
                             developer</p>
                         <hr class="mb-8 opacity-90 dark:opacity-5" />
                         <p class="mb-8 dark:text-gray-400">
