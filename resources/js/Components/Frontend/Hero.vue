@@ -4,7 +4,7 @@
 <template>
     <section id="home" class="lg:h-[85vh] flex items-center dark:bg-primary py-32 lg:py-0 overflow-hidden">
         <div class="container mx-auto h-full">
-            <div class="flex items-center h-full pt-8">
+            <div class="flex flex-col md:flex-row items-center h-full pt-8">
                 <div class="flex-1 flex-col items-center lg:items-start">
                     <p class="text-lg text-slate-900 text-md mb-[22px] font-semibold">Hey, I'm Régis ATTOLOU </p>
                     <h1
@@ -18,9 +18,9 @@
                     <button class="btn btn-md dark:bg-blue-500 hover:bg-slate-800 text-gray-100 bg-slate-900 md:btn-lg transition-all px-4 py-3 dark:text-gray-50 font-semibold dark:hover:bg-blue-600 rounded-lg shadow-lg">Work with
                         me</button>
                 </div>
-                <div class="hidden lg:flex flex-1 justify-end items-center h-full">
+                <div class="flex flex-1 justify-end items-center h-full mt-8 md:mt-0">
                     <img class="object-cover rounded-lg" src="/images/img/hero8.jpg"
-                        alt="">
+                        alt="Hero image">
                 </div>
             </div>
         </div>
