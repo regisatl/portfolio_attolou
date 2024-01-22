@@ -3,7 +3,7 @@
 
 <template>
     <div class="bg-white">
-        <div class="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
+        <div class="container mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
             <div
                 class="relative isolate overflow-hidden dark:bg-gray-900 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
                 <svg viewBox="0 0 1024 1024"
@@ -25,7 +25,7 @@
                         consectetur. Malesuada adipiscing sagittis vel nulla.</p>
                     <div class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
                         <a href="#"
-                            class="rounded-lg px-3.5 py-2.5 text-sm font-semibold text-gray-100 bg-slate-800 shadow-sm hover:bg-slate-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Get
+                            class="rounded-lg px-3.5 py-2.5 text-sm font-semibold text-gray-100 dark:bg-blue-500 dark:hover:bg-blue-600 shadow-lg bg-slate-800 hover:bg-slate-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Get
                             started</a>
                         <a href="#" class="text-sm font-semibold leading-6 dark:text-gray-100 ">Learn more <span
                                 aria-hidden="true">→</span></a>
