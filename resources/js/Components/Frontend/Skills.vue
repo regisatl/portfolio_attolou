@@ -10,7 +10,7 @@ defineProps({
             <h2
                 class="text-center text-3xl lg:text-4xl md:text-xl sm:text-xl font-medium lg:font-extrabold md:font-bold text-slate-800 dark:text-amber-100 mb-5">
                 My Skills</h2>
-            <div class="grid grid-cols-8 md:grid-flow-col md:overflow-x-scroll scrollbar-hide">
+            <div class="flex flex-col lg:flex-row justify-evenly items-center overflow-x-scroll scrollbar-hide">
                 <div class="flex flex-col items-center justify-center" v-for="skill in skills.data" :key="skill.id">
                     <img :src="skill.image" :alt="skill.name" class="lg:h-12 rounded-full" />
                     <div class="hidden lg:block mt-2">
@@ -26,9 +26,6 @@ defineProps({
 <style>
 body {
     font-family: 'Poppins', sans-serif;
-}
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
 }
 
 </style>

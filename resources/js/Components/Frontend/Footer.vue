@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="bg-amber-50 dark:bg-gray-800 py-12">
+    <div class="bg-amber-50 dark:bg-gray-800 py-12 border-t-2 border-gray-200">
         <div class="container mx-auto">
             <div class="flex flex-col md:flex-row space-y-6 lg:space-y-0 items-center justify-between">
                 <div class="flex space-x-6 items-center justify-center">
