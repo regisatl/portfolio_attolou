@@ -1,6 +1,6 @@
 <script setup></script>
 <template>
-    <section id="about" class="section bg-amber-50 dark:bg-slate-900">
+    <section class="section bg-amber-50 dark:bg-slate-900">
         <div class="container mx-auto lg:py-14 md:py-8 sm:py-8">
             <div class="flex flex-col xl:flex-row sm:py-2 gap-24 animate-slide-up-image">
                 <img src="/images/img/hero4.jpg"
@@ -8,7 +8,7 @@
                     alt="about">
                 <div class="flex flex-col items-center text-center lg:items-start lg:text-left my-5">
                     <div class="flex flex-col">
-                        <h2
+                        <h2 id="about"
                             class="text-3xl lg:text-4xl md:text-xl sm:text-xl font-medium lg:font-extrabold md:font-bold mb-3 text-slate-800 dark:text-amber-100">
                             About Me
                         </h2>
@@ -43,6 +43,10 @@
 </template>
 
 <style>
+body {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
 
 @keyframes slide-up {
     0% {

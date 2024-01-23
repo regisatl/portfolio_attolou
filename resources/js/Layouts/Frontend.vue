@@ -8,7 +8,7 @@ import Footer from "@/Components/Frontend/Footer.vue";
         <!----Header--->
         <Header />
         <!----Main--->
-        <main class="min-h-screen animate-slide-up transition-all">
+        <main class="min-h-screen transition-all">
             <slot />
         </main>
         <!----Footer--->
@@ -18,26 +18,33 @@ import Footer from "@/Components/Frontend/Footer.vue";
 
 <style>
 body {
+    scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
 
-/* @keyframes slide-up {
+@keyframes slide-up {
     0% {
-        transform: sY(100%);
+        transform: scale(0);
         opacity: 0;
     }
 
     100% {
-        transform: translateY(0);
+        transform:scale(1);
         opacity: 1;
     }
 }
 
 .animate-slide-up {
     animation-name: slide-up;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
-} */
+}
+.animate-slide-up-image {
+    animation-name: slide-up;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
 
 </style>

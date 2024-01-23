@@ -26,6 +26,7 @@ defineProps({
 
 <style>
 body {
+    scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
 </style>
