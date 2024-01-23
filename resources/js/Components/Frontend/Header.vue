@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from "vue";
+
 const showMobileMenuNavbar = ref("false");
 const showMobileMenuLogo = ref("false");
 
@@ -20,7 +21,7 @@ const showMenuLogo = () => {
                 class="flex items-center rtl:space-x-reverse hover:animate-bounce transition duration- delay-150 ease-in-out relative">
                 <img src="/images/cv.png" class="h-10" alt="CV Logo" />
                 <span
-                    class="self-center text-2xl font-bold whitespace-nowrap dark:text-white uppercase text-[#40a4fb] dark:hover:text-[#40a4fb] absolute left-8 top-1">urriculum
+                    class="self-center hidden md:hidden lg:block text-2xl font-bold whitespace-nowrap dark:text-white uppercase text-[#40a4fb] dark:hover:text-[#40a4fb] absolute left-8 top-1">urriculum
                     Vitae</span>
             </a>
             <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse relative">

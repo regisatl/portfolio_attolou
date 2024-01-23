@@ -88,7 +88,7 @@ const submit = () => {
                         </div>
                     </div>
                 </div>
-                <form @submit.prevent="submit" class="space-y-8 w-full max-w-md">
+                <form @submit.prevent="submit" class="space-y-8 w-full max-w-md animate-slide-up-image">
                     <div v-if="showMessage" class="p-4 bg-emerald-100 border-2 border-emerald-500 dark:bg-emerald-400 dark:text-gray-900 text-slate-800 rounded-lg">Thank you for contacting
                         me</div>
                     <div class="flex gap-8">
@@ -124,4 +124,29 @@ const submit = () => {
 
 <style>body {
     font-family: 'Poppins', sans-serif;
-}</style>
+}
+@keyframes slide-up {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform:scale(1);
+        opacity: 1;
+    }
+}
+
+.animate-slide-up {
+    animation-name: slide-up;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.animate-slide-up-image {
+    animation-name: slide-up;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+</style>

@@ -26,7 +26,7 @@ const filterProjects = (id) => {
 <template>
     <div class="container mx-auto">
         <nav class="mb-12 border-b-2 border-slate-800 dark:text-dark-navy-100">
-            <ul class="flex flex-col lg:flex-row justify-evenly items-center overflow-x-scroll scrollbar-hide">
+            <ul class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-y-4">
                 <li class="cursor-pointer capitalize m-4">
                     <button @click="filterProjects('all')"
                         class="flex text-center px-4 py-2 text-slate-800 hover:text-[#40a4fb] font-semibold dark:text-gray-100 active:text-emerald-500"

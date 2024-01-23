@@ -18,7 +18,7 @@ defineProps({
 
 <template>
     <Head title="Welcome to portfolio Attolou" />
-    <FrontendLayout class="transfor">
+    <FrontendLayout>
         <!---Hero primary-->
         <Hero />
         <!---Promot tail-100-->
@@ -28,7 +28,7 @@ defineProps({
         <!---Skills  tail-100-->
         <Skills :skills="skills" />
         <!---Portfolio primary-->
-        <Portfolio :skills="skills" :projects="projects"/>
+        <Portfolio :skills="skills" :projects="projects" />
         <!---Services secondary-->
         <Services />
         <!---Contact primary-->
@@ -37,8 +37,9 @@ defineProps({
 </template>
 
 <style>
-    body {
-        font-family: 'Poppins', sans-serif;
-    }
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 </style>
 

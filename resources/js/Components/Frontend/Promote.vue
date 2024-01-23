@@ -2,7 +2,7 @@
 </script>
 
 <template>
-    <div class="bg-white">
+    <div class="bg-whiteani mate-slide-up">
         <div class="container mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
             <h2
                 class="text-3xl text-center lg:text-4xl md:text-xl sm:text-xl font-medium lg:font-extrabold md:font-bold mb-3 text-slate-800 dark:text-amber-100">
@@ -36,7 +36,7 @@
                     </div>
                 </div>
                 <div class="relative mt-16 h-80 lg:mt-8 transform hover:scale-110 transition duration-700">
-                    <img class="absolute lg:left-0 md:left-10 md:top-0 lg:top-12 right-0 w-[43rem] max-w-none bg-white/5 ring-1 ring-white/1 rounded-lg"
+                    <img class="absolute lg:left-0 md:left-10 md:top-0 lg:top-12 right-0 w-[43rem] max-w-none bg-white/5 ring-1 ring-white/1 rounded-lg animate-slide-up-image"
                         src="/images/img/hero9.jpg" alt="App screenshot" />
                 </div>
             </div>
@@ -45,3 +45,31 @@
 </template>
 
 
+<style>
+
+@keyframes slide-up {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform:scale(1);
+        opacity: 1;
+    }
+}
+
+.animate-slide-up {
+    animation-name: slide-up;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.animate-slide-up-image {
+    animation-name: slide-up;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+</style>
