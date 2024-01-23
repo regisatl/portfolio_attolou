@@ -3,7 +3,6 @@
 namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
@@ -16,12 +15,23 @@ class ContactMail extends Mailable
     /**
      * Create a new message instance.
      */
-    public function __construct()
+    public function __construct(public string $name, public string $email, public string $message)
     {
         //
+
     }
 
     /**
+     * Build the message.
+     *
+     *
+     * */
+    public function build()
+    {
+        return $this->subject('Mail from Portfolio ATTOLOU')->replyTo($this->email)->view('emails.contact');
+    }
+
+    /*
      * Get the message envelope.
      */
     public function envelope(): Envelope

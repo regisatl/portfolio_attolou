@@ -4,69 +4,14 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\ContactRequest;
 use App\Mail\ContactMail;
-use App\Models\Contact;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
 
     public function __invoke(ContactRequest $request) {
-        Mail::to('regisattolou19@gmail.com')->send(new ContactMail());
-    }
-    /**
-     * Display a listing of the resource.
-     */
-    public function index()
-    {
-        //
+        Mail::to('regisattolou19@gmail.com')->send(new ContactMail($request->name, $request->email, $request->message));
+        return  redirect()->back();
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     */
-    public function show(Contact $contact)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Contact $contact)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, Contact $contact)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(Contact $contact)
-    {
-        //
-    }
 }
