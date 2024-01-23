@@ -19,7 +19,7 @@
                     </defs>
                 </svg>
                 <div class="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
-                    <h2 class="text-3xl font-bold tracking-tight text-slate-800 dark:text-gray-100 sm:text-4xl">Boost your
+                    <h2 class="text-3xl font-bold tracking-tight text-slate-800 dark:text-amber-100 sm:text-4xl">Boost your
                         productivity.<br />Start using our app today.</h2>
                     <p class="mt-6 text-lg leading-8 dark:text-gray-100 text-slate-500">Ac euismod vel sit maecenas id pellentesque eu sed
                         consectetur. Malesuada adipiscing sagittis vel nulla.</p>
