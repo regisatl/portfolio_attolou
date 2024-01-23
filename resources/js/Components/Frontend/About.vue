@@ -28,9 +28,7 @@
                             ridiculous.
                             I am very passionate about computers and everything related to technology. Passions provides
                             incontestable arguments to circumvent obstacles.
-                            <br /><br />Amet
-                            error, quaerat, excepturi hic quibusdam sapiente ullam in illum cumque at suscipit deserunt
-                            accusamus dolore culpa.
+                            <br /><br />Dreams are not the things we see in our sleep, dreams are the things that keep us from sleeping. It's all about money.
                         </p>
                     </div>
                     <a href="#contact"

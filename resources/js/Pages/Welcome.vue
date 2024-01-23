@@ -18,7 +18,7 @@ defineProps({
 
 <template>
     <Head title="Welcome to portfolio Attolou" />
-    <FrontendLayout>
+    <FrontendLayout class="transfor">
         <!---Hero primary-->
         <Hero />
         <!---Promot tail-100-->

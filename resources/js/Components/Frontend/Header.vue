@@ -25,32 +25,29 @@ const showMenuLogo = () => {
             </a>
             <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse relative">
                 <button type="button" @click="showMenuLogo"
-                    class="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+                    class="flex text-sm text-[#40a4fb] rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
                     id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown"
                     data-dropdown-placement="bottom">
                     <span class="sr-only">Open user menu</span>
-                    <img class="w-8 h-8 rounded-full border-2 border-slate-500" src="/images/photo.jpg" alt="user photo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                        class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                        <path fill-rule="evenodd"
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                    </svg>
                 </button>
                 <!-- Dropdown menu -->
-                <div class="z-50 my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-b-lg dark:rounded-lg shadow dark:bg-gray-800 dark:divide-gray-600 transition duration-300 absolute top-8 right-12 lg:top-5 lg:right-0"
+                <div class="z-50 my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-b-lg dark:rounded-lg shadow dark:bg-gray-800 dark:divide-gray-600 transition duration-300 absolute top-8 right-12 lg:top-10 lg:right-0"
                     :class="{ hidden: showMobileMenuLogo }" id="user-dropdown">
-                    <div class="px-4 py-3">
-                        <span class="block text-sm text-gray-900 dark:text-white">Admin ATTOLOU</span>
-                        <span class="block text-sm  text-gray-500 truncate dark:text-gray-400">adminattolou@gmail.com</span>
-                    </div>
                     <ul class="py-2" aria-labelledby="user-menu-button">
-                        <li>
-                            <a href="#"
-                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-emerald-500 dark:text-gray-200 dark:hover:text-white">Dashboard</a>
-                        </li>
                         <li>
                             <a href="#"
                                 class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-emerald-500 dark:text-gray-200 dark:hover:text-white">Settings</a>
                         </li>
                         <li>
-                            <a href="#"
+                            <a :href="route('login')"
                                 class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-emerald-500 dark:text-gray-200 dark:hover:text-white">Sign
-                                out</a>
+                                In</a>
                         </li>
                     </ul>
                 </div>
@@ -70,24 +67,24 @@ const showMenuLogo = () => {
                 <ul
                     class="flex flex-col font-medium p-4 md:p-0 mt-4 border rounded-lg bg-amber-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-amber-50 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                     <li>
-                        <a href="#"
-                            class="block py-3 px-4 text-gray-900 rounded hover:bg-[#40a4fb] md:hover:bg-transparent md:hover:text-[#40a4fb] md:p-0 dark:text-white md:dark:hover:text-[#40a4fb] dark:hover:bg-blue-500 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition duration-500 transform hover:scale-110 active:text-emerald-500">Home</a>
+                        <a href="#home"
+                            class="block py-3 px-4 text-slate-800 hover:text-gray-100 rounded hover:bg-[#40a4fb] md:hover:bg-transparent md:hover:text-[#40a4fb] md:p-0 dark:text-white md:dark:hover:text-[#40a4fb] dark:hover:bg-blue-500 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition duration-500 transform hover:scale-110 active:text-emerald-500">Home</a>
                     </li>
                     <li>
-                        <a href="#"
-                            class="block py-3 px-4 text-gray-900 rounded hover:bg-[#40a4fb] md:hover:bg-transparent md:hover:text-[#40a4fb] md:p-0 dark:text-white md:dark:hover:text-[#40a4fb] dark:hover:bg-[#40a4fb] dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition duration-500 transform hover:scale-110 active:text-emerald-500">About</a>
+                        <a href="#about"
+                            class="block py-3 px-4 text-slate-800 hover:text-gray-100 rounded hover:bg-[#40a4fb] md:hover:bg-transparent md:hover:text-[#40a4fb] md:p-0 dark:text-white md:dark:hover:text-[#40a4fb] dark:hover:bg-[#40a4fb] dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition duration-500 transform hover:scale-110 active:text-emerald-500">About</a>
                     </li>
                     <li>
-                        <a href="#"
-                            class="block py-3 px-4 text-gray-900 rounded hover:bg-[#40a4fb] md:hover:bg-transparent md:hover:text-[#40a4fb] md:p-0 dark:text-white md:dark:hover:text-[#40a4fb] dark:hover:bg-[#40a4fb] dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition duration-500 transform hover:scale-110 active:text-emerald-500">Skills</a>
+                        <a href="#skills"
+                            class="block py-3 px-4 text-slate-800 hover:text-gray-100 rounded hover:bg-[#40a4fb] md:hover:bg-transparent md:hover:text-[#40a4fb] md:p-0 dark:text-white md:dark:hover:text-[#40a4fb] dark:hover:bg-[#40a4fb] dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition duration-500 transform hover:scale-110 active:text-emerald-500">Skills</a>
                     </li>
                     <li>
-                        <a href="#"
-                            class="block py-3 px-4 text-gray-900 rounded hover:bg-[#40a4fb] md:hover:bg-transparent md:hover:text-[#40a4fb] md:p-0 dark:text-white md:dark:hover:text-[#40a4fb] dark:hover:bg-[#40a4fb] dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition duration-500 transform hover:scale-110 active:text-emerald-500">Projects</a>
+                        <a href="#projects"
+                            class="block py-3 px-4 text-slate-800 hover:text-gray-100 rounded hover:bg-[#40a4fb] md:hover:bg-transparent md:hover:text-[#40a4fb] md:p-0 dark:text-white md:dark:hover:text-[#40a4fb] dark:hover:bg-[#40a4fb] dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition duration-500 transform hover:scale-110 active:text-emerald-500">Projects</a>
                     </li>
                     <li>
-                        <a href="#"
-                            class="block py-3 px-4 text-gray-900 rounded hover:bg-[#40a4fb] md:hover:bg-transparent md:hover:text-[#40a4fb] md:p-0 dark:text-white md:dark:hover:text-[#40a4fb] dark:hover:bg-[#40a4fb] dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition duration-500 transform hover:scale-110 active:text-emerald-500">Contact</a>
+                        <a href="#contact"
+                            class="block py-3 px-4 text-slate-800 hover:text-gray-100 rounded hover:bg-[#40a4fb] md:hover:bg-transparent md:hover:text-[#40a4fb] md:p-0 dark:text-white md:dark:hover:text-[#40a4fb] dark:hover:bg-[#40a4fb] dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition duration-500 transform hover:scale-110 active:text-emerald-500">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -98,5 +95,4 @@ const showMenuLogo = () => {
 <style>
 body {
     font-family: 'Poppins', sans-serif;
-}
-</style>
+}</style>
