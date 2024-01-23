@@ -88,7 +88,7 @@ const submit = () => {
                     <textarea v-model="form.message" id="message" rows="4" name="message"
                         class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-[#40a4fb] focus:border-[#40a4fb] dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#40a4fb] dark:focus:border-[#40a4fb]"
                         placeholder="Write your message..." spellcheck="false" style="resize:none"></textarea>
-                    <button type="button"
+                    <button type="submit"
                         class="text-gray-100 bg-slate-800 hover:bg-slate-900 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-[#40a4fb] dark:hover:bg-blue-600  dark:border-[#40a4fb] w-full">Send
                     </button>
                 </form>

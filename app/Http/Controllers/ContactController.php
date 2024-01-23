@@ -9,9 +9,10 @@ use Illuminate\Support\Facades\Mail;
 class ContactController extends Controller
 {
 
-    public function __invoke(ContactRequest $request) {
+    public function __invoke(ContactRequest $request)
+    {
         Mail::to('regisattolou19@gmail.com')->send(new ContactMail($request->name, $request->email, $request->message));
-        return  redirect()->back();
+        return redirect()->back();
     }
 
 }
