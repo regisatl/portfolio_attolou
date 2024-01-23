@@ -6,14 +6,31 @@ defineProps({
     skills: Object,
 });
 
+const showMessage = ref(false);
+
 const form = useForm({
     name: "",
     email: "",
     message: "",
 });
 
+const setShowMessage = (value) => {
+    showMessage.value = value;
+}
+
+const cleanForm = () => {
+    setShowMessage(true);
+    form.reset();
+    setTimeout(() => setShowMessage(false), 2000);
+}
+
 const submit = () => {
-    form.post(route('contact'));
+    form.post(route('contact'), {
+        preserveScroll: true,
+        onSuccess: () => {
+            cleanForm()
+        }
+    });
 }
 
 </script>
@@ -72,22 +89,29 @@ const submit = () => {
                     </div>
                 </div>
                 <form @submit.prevent="submit" class="space-y-8 w-full max-w-md">
+                    <div v-if="showMessage" class="p-4 bg-emerald-500 dark:bg-emerald-400 dark:text-gray-900 text-gray-100 rounded-lg">Thank you for contacting
+                        me</div>
                     <div class="flex gap-8">
                         <div>
                             <input v-model="form.name" type="text" name="name" id="" placeholder="Your name"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#40a4fb] focus:border-[#40a4fb] block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#40a4fb] dark:focus:border-[#40a4fb]" />
-                            <span v-if="form.errors.name" class="text-sm font-medium m-2 text-red-500">{{ form.errors.name }}</span>
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#40a4fb] focus:border-[#40a4fb] block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#40a4fb] dark:focus:border-[#40a4fb]"
+                                required />
+                            <span v-if="form.errors.name" class="text-sm font-medium m-2 text-red-500">{{ form.errors.name
+                            }}</span>
                         </div>
                         <div>
                             <input v-model="form.email" type="email" name="email" id="" placeholder="Your email"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#40a4fb] focus:border-[#40a4fb] block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#40a4fb] dark:focus:border-[#40a4fb]" />
-                            <span v-if="form.errors.email" class="text-sm font-medium m-2 text-red-500">{{ form.errors.email }}</span>
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#40a4fb] focus:border-[#40a4fb] block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#40a4fb] dark:focus:border-[#40a4fb]"
+                                required />
+                            <span v-if="form.errors.email" class="text-sm font-medium m-2 text-red-500">{{ form.errors.email
+                            }}</span>
                         </div>
                     </div>
-                    <span v-if="form.errors.message" class="text-sm font-medium m-2 text-red-500">{{ form.errors.message }}</span>
+                    <span v-if="form.errors.message" class="text-sm font-medium m-2 text-red-500">{{ form.errors.message
+                    }}</span>
                     <textarea v-model="form.message" id="message" rows="4" name="message"
                         class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-[#40a4fb] focus:border-[#40a4fb] dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#40a4fb] dark:focus:border-[#40a4fb]"
-                        placeholder="Write your message..." spellcheck="false" style="resize:none"></textarea>
+                        placeholder="Write your message..." spellcheck="false" style="resize:none" required></textarea>
                     <button type="submit"
                         class="text-gray-100 bg-slate-800 hover:bg-slate-900 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-[#40a4fb] dark:hover:bg-blue-600  dark:border-[#40a4fb] w-full">Send
                     </button>
@@ -98,7 +122,6 @@ const submit = () => {
 </template>
 
 
-<style>
-body {
+<style>body {
     font-family: 'Poppins', sans-serif;
 }</style>
