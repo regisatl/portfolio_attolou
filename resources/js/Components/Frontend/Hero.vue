@@ -3,14 +3,14 @@
 </script>
 <template>
     <section id="home"
-        class="lg:h-[85vh] flex items-center bg-amber-50 dark:bg-gray-950 py-32 lg:py-0 overflow-hidden animate-slide-up">
+        class="lg:h-[90vh] flex items-center bg-amber-50 dark:bg-gray-950 lg:py-80 py-40 overflow-hidden animate-slide-up">
         <div class="container mx-auto h-full">
             <div class="flex flex-col md:flex-row items-center h-full">
                 <div class="flex-1 flex-col items-center lg:items-start">
-                    <p class="text-lg text-[#40a4fb] dark:text-amber-100 text-md mb-[22px] font-semibold">Hey, I'm Régis
+                    <p class="text-lg text-[#40a4fb] dark:text-gray-100 text-md mb-[22px] font-semibold">Hey, I'm Régis
                         ATTOLOU </p>
                     <h1
-                        class="text-4xl leading-[44px] md:text-5xl md:leading-light lg:text-7xl lg:leading-[1 ] font-bold md:tracking-[-2px] dark:text-gray-100 text-slate-800">
+                        class="text-4xl leading-[44px] md:text-5xl md:leading-light lg:text-7xl lg:leading-[1 ] font-bold md:tracking-[-2px] dark:text-amber-100 text-slate-800">
                         I Build & Design <br /> Web Interfaces.
                     </h1>
                     <p
@@ -67,6 +67,14 @@
                                     class="bi bi-github" viewBox="0 0 16 16">
                                     <path
                                         d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                                </svg>
+                            </a>
+                            <a href="https://join.skype.com/invite/Emh5IAjoypCC" title="Skype"
+                                class="text-slate-800 hover:text-blue-500 dark:text-gray-100 transform duration-300 transition-all hover:scale-105 mr-3 sm:mr-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                    class="bi bi-skype" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4.671 0c.88 0 1.733.247 2.468.702a7.42 7.42 0 0 1 6.02 2.118 7.37 7.37 0 0 1 2.167 5.215q0 .517-.072 1.026a4.66 4.66 0 0 1 .6 2.281 4.64 4.64 0 0 1-1.37 3.294A4.67 4.67 0 0 1 11.18 16c-.84 0-1.658-.226-2.37-.644a7.42 7.42 0 0 1-6.114-2.107A7.37 7.37 0 0 1 .529 8.035q0-.545.08-1.081a4.644 4.644 0 0 1 .76-5.59A4.68 4.68 0 0 1 4.67 0zm.447 7.01c.18.309.43.572.729.769a7 7 0 0 0 1.257.653q.737.308 1.145.523c.229.112.437.264.615.448.135.142.21.331.21.528a.87.87 0 0 1-.335.723c-.291.196-.64.289-.99.264a2.6 2.6 0 0 1-1.048-.206 11 11 0 0 1-.532-.253 1.3 1.3 0 0 0-.587-.15.72.72 0 0 0-.501.176.63.63 0 0 0-.195.491.8.8 0 0 0 .148.482 1.2 1.2 0 0 0 .456.354 5.1 5.1 0 0 0 2.212.419 4.6 4.6 0 0 0 1.624-.265 2.3 2.3 0 0 0 1.08-.801c.267-.39.402-.855.386-1.327a2.1 2.1 0 0 0-.279-1.101 2.5 2.5 0 0 0-.772-.792A7 7 0 0 0 8.486 7.3a1 1 0 0 0-.145-.058 18 18 0 0 1-1.013-.447 1.8 1.8 0 0 1-.54-.387.73.73 0 0 1-.2-.508.8.8 0 0 1 .385-.723 1.76 1.76 0 0 1 .968-.247c.26-.003.52.03.772.096q.412.119.802.293c.105.049.22.075.336.076a.6.6 0 0 0 .453-.19.7.7 0 0 0 .18-.496.72.72 0 0 0-.17-.476 1.4 1.4 0 0 0-.556-.354 3.7 3.7 0 0 0-.708-.183 6 6 0 0 0-1.022-.078 4.5 4.5 0 0 0-1.536.258 2.7 2.7 0 0 0-1.174.784 1.9 1.9 0 0 0-.45 1.287c-.01.37.076.736.25 1.063" />
                                 </svg>
                             </a>
                         </div>

@@ -36,8 +36,8 @@ const submit = () => {
 </script>
 
 <template>
-    <section class="section dark:bg-slate-800 py-12 bg-amber-50">
-        <div class="container mx-auto">
+    <section id="contact" class="section dark:bg-slate-800 py-12 bg-amber-50">
+        <div class="container mx-auto" v-motion:initial="{opacity:0, y:100,}" :visible="{opacity:1, y:0,}">
             <div class="flex flex-col items-center text-center">
                 <h2
                     class="subtitle-title text-3xl lg:text-4xl md:text-xl sm:text-xl font-medium lg:font-extrabold md:font-bold text-slate-800 dark:text-amber-100">
