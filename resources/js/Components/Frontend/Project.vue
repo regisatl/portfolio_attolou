@@ -7,7 +7,7 @@ defineProps({
 
 <template>
     <Link href="project.project_url"
-        class="group flex flex-col items-center text-center cursor-pointer animate-slide-up py-4">
+        class="group flex flex-col items-center text-center cursor-pointer animate-slide-up py-4" v-motion:initial="{opacity:0, y:100,}" :visible="{opacity:1, y:0,}">
     <div class="card bg-white  transform hover:scale-105 transition duration-700 shadow-lg rounded-lg py-5 px-20">
         <div class="mb-6">
             <img :src="project.image" :alt="project.name" class="rounded-2xl h-56 animate-slide-up-image">
@@ -49,7 +49,7 @@ body {
 }
 .animate-slide-up-image {
     animation-name: slide-up;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
