@@ -3,8 +3,8 @@
 namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
-
 use Illuminate\Mail\Mailable;
+use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
 class ContactMail extends Mailable
@@ -17,7 +17,6 @@ class ContactMail extends Mailable
     public function __construct(public string $name, public string $email, public string $body)
     {
         //
-
     }
 
     /**
@@ -30,5 +29,6 @@ class ContactMail extends Mailable
     {
         return $this->subject('Mail from Portfolio ATTOLOU')->replyTo($this->email)->view('emails.contact');
     }
+
 
 }
