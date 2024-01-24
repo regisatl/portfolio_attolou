@@ -9,7 +9,7 @@ import {
 </script>
 
 <template>
-    <section id="services" class="section bg-gray-100 dark:bg-slate-100 py-8">
+    <section id="services" class="section bg-gray-100 dark:bg-slate-100 py-14">
         <div class="container mx-auto" v-motion:initial="{opacity:0, y:100,}" :visible="{opacity:1, y:0,}">
             <div class="flex flex-col items-center text-center">
                 <h2

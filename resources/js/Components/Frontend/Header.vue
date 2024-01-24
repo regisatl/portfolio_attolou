@@ -44,7 +44,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <nav class="w-full fixed z-20 bg-amber-50 border-b-2 border-gray-200 dark:bg-gray-900 animate-slide-up" :class="{'bg-white dark:bg-white': scrollBg, 'bg-white dark:bg-slate-800': scrollBg}">
+    <nav class="w-full fixed z-20 bg-amber-50 border-b-2 border-gray-200 dark:border-dark-navy-100 dark:bg-gray-900 animate-slide-up" :class="{'bg-white dark:bg-white': scrollBg, 'bg-white dark:bg-slate-800': scrollBg}">
         <div class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-5">
             <a href="#"
                 class="flex items-center rtl:space-x-reverse hover:animate-bounce transition duration- delay-150 ease-in-out relative">

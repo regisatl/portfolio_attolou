@@ -5,12 +5,12 @@ defineProps({
 </script>
 
 <template>
-    <section id="skills" class="dark:bg-slate-800 py-12 bg-white">
+    <section id="skills" class="dark:bg-slate-800 py-10 bg-white">
         <div class="container mx-auto" v-motion:initial="{opacity:0, y:100,}" :visible="{opacity:1, y:0,}">
             <h2
                 class="text-center text-3xl lg:text-4xl md:text-xl sm:text-xl font-medium lg:font-extrabold md:font-bold text-slate-800 dark:text-amber-100 mb-5">
                 My Skills</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-y-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-y-4 py-8">
                 <div class="flex flex-col items-center justify-center" v-for="skill in skills.data" :key="skill.id">
                     <img :src="skill.image" :alt="skill.name" class="h-12 lg:h-12 rounded-full animate-slide-up-image" />
                     <div class="hidden md:block lg:block mt-2">

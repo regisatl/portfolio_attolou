@@ -7,7 +7,7 @@ defineProps({
 
 <template>
     <Link href="project.project_url"
-        class="group flex flex-col items-center text-center cursor-pointer animate-slide-up ">
+        class="group flex flex-col items-center text-center cursor-pointer animate-slide-up py-4">
     <div class="card bg-white  transform hover:scale-105 transition duration-700 shadow-lg rounded-lg py-5 px-20">
         <div class="mb-6">
             <img :src="project.image" :alt="project.name" class="rounded-2xl h-56 animate-slide-up-image">
