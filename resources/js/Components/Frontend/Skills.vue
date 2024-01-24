@@ -14,7 +14,7 @@ defineProps({
                 <div class="flex flex-col items-center justify-center" v-for="skill in skills.data" :key="skill.id">
                     <img :src="skill.image" :alt="skill.name" class="h-12 lg:h-12 rounded-full animate-slide-up-image" />
                     <div class="hidden md:block lg:block mt-2">
-                        <h3 class="text-sm font-bold dark:text-gray-100">{{ skill.name }}</h3>
+                        <h3 class="text-sm font-bold text-slate-800 dark:text-gray-100">{{ skill.name }}</h3>
                     </div>
                 </div>
             </div>

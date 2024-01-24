@@ -34,7 +34,7 @@ const filterProjects = (id) => {
                 </li>
                 <li class="cursor-pointer capitalize m-4" v-for="projectSkill in skills.data" :key="projectSkill.id">
                     <button @click="filterProjects(projectSkill.id)"
-                        class="flex text-center text-slate-800 hover:text-gray-100 transition-all duration-500 rounded-lg shadow-lg px-4 py-2 border-2 border-[#40a4fb] hover:bg-[#40a4fb] font-medium dark:text-gray-100" :class="[selectedSkill === projectSkill.id ? 'text-[#40a4fb] bg-[#40a4fb] dark:text-gray-100' : '']">{{
+                        class="flex text-center text-slate-800 hover:text-gray-100 transition-all duration-500 rounded-lg shadow-lg px-4 py-2 border-2 border-[#40a4fb] hover:bg-[#40a4fb] font-medium dark:text-gray-100" :class="[selectedSkill === projectSkill.id ? 'text-gray-100 bg-[#40a4fb] dark:text-gray-100' : '']">{{
                             projectSkill.name }}</button>
                 </li>
             </ul>
