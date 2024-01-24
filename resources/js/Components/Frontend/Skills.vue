@@ -6,7 +6,7 @@ defineProps({
 
 <template>
     <section id="skills" class="dark:bg-slate-800 py-12 bg-white">
-        <div class="container mx-auto">
+        <div class="container mx-auto" v-motion:initial="{opacity:0, y:100,}" :visible="{opacity:1, y:0,}">
             <h2
                 class="text-center text-3xl lg:text-4xl md:text-xl sm:text-xl font-medium lg:font-extrabold md:font-bold text-slate-800 dark:text-amber-100 mb-5">
                 My Skills</h2>

@@ -1,7 +1,7 @@
 <script setup></script>
 <template>
     <section id="about" class="section bg-amber-50 dark:bg-slate-900">
-        <div class="container mx-auto lg:py-14 md:py-8 sm:py-8">
+        <div class="container mx-auto lg:py-14 md:py-8 sm:py-8" v-motion:initial="{opacity:0, y:100,}" :visible="{opacity:1, y:0,}">
             <div class="flex flex-col xl:flex-row sm:py-2 gap-24 animate-slide-up-image">
                 <img src="/images/img/hero4.jpg"
                     class="object-cover h-full w-[566px] md:mx-auto lg:mx-0 my-5 rounded-2xl bg-white/5 ring-1 ring-white/1 transform hover:scale-105 transition duration-700"

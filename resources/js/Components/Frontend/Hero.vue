@@ -4,7 +4,7 @@
 <template>
     <section id="home"
         class="lg:h-[90vh] flex items-center bg-amber-50 dark:bg-gray-950 lg:py-80 py-40 overflow-hidden animate-slide-up">
-        <div class="container mx-auto h-full">
+        <div class="container mx-auto h-full" v-motion:initial="{opacity:0, y:100,}" :visible="{opacity:1, y:0,}">
             <div class="flex flex-col md:flex-row items-center h-full">
                 <div class="flex-1 flex-col items-center lg:items-start">
                     <p class="text-lg text-[#40a4fb] dark:text-gray-100 text-md mb-[22px] font-semibold">Hey, I'm Régis
